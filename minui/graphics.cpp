@@ -423,7 +423,8 @@ int gr_init() {
   if (gr_draw->pixel_bytes != 4) {
     printf("gr_init: Only 4-byte pixel formats supported\n");
   }
-
+  gr_fb_blank(true);
+  gr_fb_blank(false);
   return 0;
 }
 
